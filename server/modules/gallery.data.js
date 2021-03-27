@@ -1,16 +1,16 @@
 const galleryItems = [
-  {
-    id: 1,
-    path: 'images/goat_small.jpg',
-    description: 'Photo of a goat taken at Glacier National Park.',
-    likes: 0,
-  },
-  {
-    id: 2,
-    path: '/images/venus_mars_jupiter.png',
-    description: `The evening view from my home in Colorado. Venus is the bright star in the middle of the photo. Mars is the lower bright star to the left (10 o'clock position). Jupiter is the bright star just above Mars.`,
-    likes: 4,
-  },
+  // {
+  //   id: 1,
+  //   path: 'images/goat_small.jpg',
+  //   description: 'Photo of a goat taken at Glacier National Park.',
+  //   likes: 0,
+  // },
+  // {
+  //   id: 2,
+  //   path: '/images/venus_mars_jupiter.png',
+  //   description: `The evening view from my home in Colorado. Venus is the bright star in the middle of the photo. Mars is the lower bright star to the left (10 o'clock position). Jupiter is the bright star just above Mars.`,
+  //   likes: 4,
+  // },
   {
     id: 3,
     path: 'images/firey_sunset.jpg',
@@ -23,12 +23,12 @@ const galleryItems = [
     description: 'My first dog, Max.',
     likes: 0,
   },
-  {
-    id: 5,
-    path: 'images/saint_chappell.jpg',
-    description: 'Interior and Rose of Sain Chappell in Paris, France.',
-    likes: 0,
-  },
+  // {
+  //   id: 5,
+  //   path: 'images/saint_chappell.jpg',
+  //   description: 'Interior and Rose of Sain Chappell in Paris, France.',
+  //   likes: 0,
+  // },
   {
     id: 6,
     path: 'images/park_near_louvre.jpg',
@@ -90,12 +90,12 @@ const galleryItems = [
     description: 'Slightly modified painting from El Paso Museum of Art.',
     likes: 0,
   },
-  {
-    id: 16,
-    path: 'alexander_the_great_square.jpg',
-    description: 'Statue of Alexander the Great in Skopje, Macedonia.',
-    likes: 0,
-  },
+  // {
+  //   id: 16,
+  //   path: 'alexander_the_great_square.jpg',
+  //   description: 'Statue of Alexander the Great in Skopje, Macedonia.',
+  //   likes: 0,
+  // },
   {
     id: 17,
     path: 'images/bad_neighbor.jpg',
@@ -176,7 +176,7 @@ const galleryItems = [
   { id: 60, path: 'images/rodin_woman.jpg', description: 'Rodin sculpture at Musee Rodin, Paris, France.', likes: 10 },
   { id: 61, path: 'images/royal_cottages_versailles.jpg', description: 'Cottages built for the Queen of France and her three closest friends.', likes: 0 },
   { id: 62, path: 'images/russian_horse.jpg', description: 'Chad at a horse-back riding resort in Kosovo.', likes: 0 },
-{ id: 63, path: 'images/saint_chappell', description: 'Interior of Saint Chappell in Paris, France.', likes: 0 },
+// { id: 63, path: 'images/saint_chappell', description: 'Interior of Saint Chappell in Paris, France.', likes: 0 },
 { id: 64, path: 'images/sam_houston_forest.jpg', description: 'Sam Houston National Forest in Texas.', likes: 0 },
 { id: 65, path: 'images/seawall_kuwait.jpg', description: 'Chad standing on the seawall in Kuwait.', likes: 0 },
 { id: 66, path: 'images/shambles_of_york.jpg', description: '"The Shambles" in York, England.', likes: 0 },
@@ -184,7 +184,7 @@ const galleryItems = [
 { id: 68, path: 'images/statue_in_gazebo.jpg', description: 'Statue in the gazebo in the gardens of Versailles.', likes: 0 },
 { id: 69, path: 'images/thomas_jefferson.jpg', description: 'Statue of Thomas Jefferson in Paris.', likes: 0 },
 { id: 70, path: 'images/tim_hortons.jpg', description: 'Chad having some piping hot Tim Horton\'s coffee in Kuwait.', likes: 0 },
-{ id: 71, path: 'images/treat_carefully.jpg', description: 'A disgusting portable toilet with a sign warning of icy floors.', likes: 0 },
+// { id: 71, path: 'images/treat_carefully.jpg', description: 'A disgusting portable toilet with a sign warning of icy floors.', likes: 0 },
 { id: 72, path: 'images/trim_castle.jpg', description: 'Trim Castle in Ireland.', likes: 0 },
 { id: 73, path: 'images/trim_castle_side.jpg', description: 'Trime Castle in Ireland.', likes: 0 },
 { id: 74, path: 'images/vet_services_pigeons.jpg', description: 'Vet services sign for your cow, dog, or pigeon.', likes: 0 },

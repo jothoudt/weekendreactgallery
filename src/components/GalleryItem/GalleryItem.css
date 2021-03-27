@@ -4,7 +4,9 @@ img{
 }
 
 .post{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     float: left;
+    background-color: beige;
+    margin: 10px;
 }

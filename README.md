@@ -14,6 +14,8 @@ Your project description goes here. What problem did you solve? How did you solv
 [x] create a toggle to switch from image to image description on click
 [x] display likes and create a like button
 [x] create an Axios put call to update likes on the click of the like button
+[x] create a database and database.sql
+[x] create a table
 
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).

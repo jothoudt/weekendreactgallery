@@ -3,20 +3,23 @@ import React, {useState} from 'react'
 import './GalleryItem.css'
 
 function GalleryItem(props){
+    //setState
     const [showDescription, setShowDescription]=useState(false);
-
+    //to display gallery depending on toggle
     let displayChange= ()=>{
         if(showDescription){
-            return(<p>{props.galleryItem.description}</p>)
+            return(<span>{props.galleryItem.description}</span>)
         }else{
             return(<img src={props.galleryItem.path}></img>)
         }
     }
-
+    
+    //toggle between photo and description
     let toggleShowDescription =()=>{
         setShowDescription(!showDescription);
     }
    
+    //updaate number of likes
     let updateLikes=()=>{
         let id= props.galleryItem.id;
         Axios.put('/gallery/like/' + id).then(
@@ -25,11 +28,11 @@ function GalleryItem(props){
             console.log(err)
             alert(err);
         })
-    }
+    };//end uodateLikes
 
     return(
         <>
-        <div class="post">
+        <div className="post">
         <p onClick={toggleShowDescription}>
         {displayChange()}
         </p>
@@ -37,7 +40,7 @@ function GalleryItem(props){
         <p>Likes: {props.galleryItem.likes}</p>
         </div>
         </>
-    )
-}
+    )//end return
+}//end GalleryItem
 
 export default GalleryItem;
