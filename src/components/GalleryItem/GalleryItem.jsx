@@ -18,9 +18,8 @@ function GalleryItem(props){
     }
    
     let updateLikes=()=>{
-        let id= props.galleryItem.id
-        console.log(id);
-        axios.post('/gallery/like/' + id).then(
+        let id= props.galleryItem.id;
+        Axios.put('/gallery/like/' + id).then(
             props.display
         ).catch((err)=>{
             console.log(err)
