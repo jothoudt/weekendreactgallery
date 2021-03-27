@@ -23,19 +23,18 @@ function App() {
       console.log(err);
       alert('err');
     })//emd catch
-  }//end getImages
+  };//end getImages
 
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <body>
+        
         <div>
           {/* move gallerylist as a prop to component */}
           <GalleryList galleryList={galleryList} display={getImages}/>
         </div>
-        </body>
       </div>
     );//end return
 }//end APP
