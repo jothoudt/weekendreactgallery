@@ -22,8 +22,8 @@ function GalleryItem(props){
         <p onClick={toggleShowDescription}>
         {displayChange()}
         </p>
-        </div>
         <p>Likes: {props.galleryItem.likes}</p>
+        </div>
         </>
     )
 }

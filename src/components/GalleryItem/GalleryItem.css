@@ -2,3 +2,9 @@ img{
     height: 250px;
     width: 250px;
 }
+
+.post{
+    height: 400px;
+    width: 400px;
+    float: left;
+}
