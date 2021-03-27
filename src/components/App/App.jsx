@@ -1,6 +1,6 @@
 import Axios from 'axios';
 import React, {useState, useEffect} from 'react';
-// import GalleryList from '../GalleryList/GalleryList';
+import GalleryList from '../GalleryList/GalleryList';
 import './App.css';
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         <div>
-          {galleryList.map((galleryItem => <><p key={galleryItem.id}>{galleryItem.path} {galleryItem.description}{galleryItem.likes}</p></>))}
+          <GalleryList galleryList={galleryList} />
           {/* <p>{galleryItem.description} {galleryItem.likes} </p> */}
         </div>
       </div>
