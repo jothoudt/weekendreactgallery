@@ -1,11 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './GalleryItem.css'
 
 function GalleryItem(props){
+    const [showDescription, setShowDescription]=useState(false);
+
+    let displayChange= ()=>{
+        if(showDescription){
+            return(<p>{props.galleryItem.description}</p>)
+        }else{
+            return(<img src={props.galleryItem.path}></img>)
+        }
+    }
+
+    let toggleShowDescription =()=>{
+        setShowDescription(!showDescription);
+    }
+
     return(
         <>
-        <img src={props.galleryItem.path}></img>
-        <><p key={props.galleryItem.id}>{props.galleryItem.description}{props.galleryItem.likes}</p></>
+        <div class="post">
+        <p onClick={toggleShowDescription}>
+        {displayChange()}
+        </p>
+        </div>
+        <p>Likes: {props.galleryItem.likes}</p>
         </>
     )
 }
