@@ -4,7 +4,7 @@ import GalleryItem from '../GalleryItem/GalleryItem'
 function GalleryList(props){
     return(
         <>
-        {props.galleryList.map((post, id)=>(<GalleryItem galleryItem={post} key={id} />)) }
+        {props.galleryList.map((post, id)=>(<GalleryItem galleryItem={post} key={id} display={props.display}/>)) }
         </>
     )
 }

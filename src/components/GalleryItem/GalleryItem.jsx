@@ -1,3 +1,4 @@
+import Axios from 'axios';
 import React, {useState} from 'react'
 import './GalleryItem.css'
 
@@ -15,6 +16,17 @@ function GalleryItem(props){
     let toggleShowDescription =()=>{
         setShowDescription(!showDescription);
     }
+   
+    let updateLikes=()=>{
+        let id= props.galleryItem.id
+        console.log(id);
+        axios.post('/gallery/like/' + id).then(
+            props.display
+        ).catch((err)=>{
+            console.log(err)
+            alert(err);
+        })
+    }
 
     return(
         <>
@@ -22,7 +34,7 @@ function GalleryItem(props){
         <p onClick={toggleShowDescription}>
         {displayChange()}
         </p>
-        <button><span>&#128077;</span></button>
+        <button onClick={updateLikes}><span>&#128077;</span></button>
         <p>Likes: {props.galleryItem.likes}</p>
         </div>
         </>

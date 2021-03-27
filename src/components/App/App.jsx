@@ -30,7 +30,7 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         <div>
-          <GalleryList galleryList={galleryList} />
+          <GalleryList galleryList={galleryList} display={getImages}/>
           {/* <p>{galleryItem.description} {galleryItem.likes} </p> */}
         </div>
       </div>
