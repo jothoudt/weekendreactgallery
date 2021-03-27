@@ -1,8 +1,9 @@
 import React from 'react'
 
-function GalleryList(){
+function GalleryList(props){
     return(
         <>
+        {props.galleryList.map((galleryItem => <><p key={galleryItem.id}>{galleryItem.path} {galleryItem.description}{galleryItem.likes}</p></>))}
         </>
     )
 }
