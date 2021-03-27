@@ -22,6 +22,7 @@ function GalleryItem(props){
         <p onClick={toggleShowDescription}>
         {displayChange()}
         </p>
+        <button><span>&#128077;</span></button>
         <p>Likes: {props.galleryItem.likes}</p>
         </div>
         </>
