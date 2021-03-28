@@ -22,7 +22,9 @@ function GalleryItem(props){
     //updaate number of likes
     let updateLikes=()=>{
         let id= props.galleryItem.id;
-        Axios.put('/gallery/like/' + id).then(
+        let likes= props.galleryItem.likes;
+
+        Axios.put('/gallery/like/' + id, likes).then(
             props.display
         ).catch((err)=>{
             console.log(err)

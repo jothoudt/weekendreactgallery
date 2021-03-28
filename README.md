@@ -15,7 +15,7 @@ Your project description goes here. What problem did you solve? How did you solv
 [x] display likes and create a like button
 [x] create an Axios put call to update likes on the click of the like button
 [x] create a database and database.sql
-[x] create a table
+[x] create a table and add images
 
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
