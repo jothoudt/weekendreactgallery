@@ -20,9 +20,9 @@ function App() {
       console.log('back from GET', response.data);
       setGalleryList(response.data)
     })//end then
-    .catch((err)=>{
-      console.log(err);
-      alert('err');
+      .catch((err)=>{
+        console.log(err);
+        alert('err');
     })//emd catch
   };//end getImages
 
@@ -31,14 +31,14 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <div>
-          <Form displayPost={getImages}/>
-        </div>
+      <div>
+        <Form displayPost={getImages}/>
+      </div>
         
-        <div>
+      <div>
           {/* move gallerylist as a prop to component */}
           <GalleryList galleryList={galleryList} display={getImages}/>
-        </div>
+      </div>
       </div>
     );//end return
 }//end APP

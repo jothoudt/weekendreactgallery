@@ -32,9 +32,9 @@ function Form(props){
 
     return(
         <>
-        <input type="text" placeholder="Pic Url" onChange={handleUrl} value={tempURL}></input>
-        <input type="text" placeholder="Description" onChange={handleDescription} value={tempDescription}></input>
-        <button onClick={addPhoto}>Add Photo</button>
+            <input type="text" placeholder="Pic Url" onChange={handleUrl} value={tempURL}></input>
+            <input type="text" placeholder="Description" onChange={handleDescription} value={tempDescription}></input>
+            <button onClick={addPhoto}>Add Photo</button>
         </>
     )
 }

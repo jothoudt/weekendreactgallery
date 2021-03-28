@@ -35,11 +35,11 @@ function GalleryItem(props){
     return(
         <>
         <div className="post">
-        <p onClick={toggleShowDescription}>
-        {displayChange()}
-        </p>
-        <button onClick={updateLikes}><span>&#128077;</span></button>
-        <p>Likes: {props.galleryItem.likes}</p>
+            <p onClick={toggleShowDescription}>
+                {displayChange()}
+            </p>
+            <button onClick={updateLikes}><span>&#128077;</span></button>
+            <p>Likes: {props.galleryItem.likes}</p>
         </div>
         </>
     )//end return
