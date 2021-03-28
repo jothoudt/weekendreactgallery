@@ -14,6 +14,9 @@ Technologies Used
 - Express
 - Postgresql
 
+The process:
+---
+
 - [x] create an Axios Get call to retrieve information
 - [x] create new component GalleryList and move information there via props
 - [x] map galleryList
