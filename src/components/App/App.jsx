@@ -1,6 +1,7 @@
 import Axios from 'axios';
 import React, {useState, useEffect} from 'react';
 import GalleryList from '../GalleryList/GalleryList';
+import Form from '../Form/Form'
 import './App.css';
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
+        <div>
+          <Form displayPost={getImages}/>
+        </div>
         
         <div>
           {/* move gallerylist as a prop to component */}
