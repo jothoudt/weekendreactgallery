@@ -12,12 +12,18 @@ function Form(props){
             description: tempDescription,
             likes: 0
         };//end object
+        if( newPhoto.path === '' || newPhoto.description ===''){
+            alert('input required');
+        }else{
         axios.post('/gallery', newPhoto).then(
-            props.displayPost
+            props.displayPost,
+            setTempURL(''),
+            setTempDescription('')
         ).catch((err)=>{
             console.log(err);
             alert(err);
         })
+    }
     };
 
     //to handle URL Form
