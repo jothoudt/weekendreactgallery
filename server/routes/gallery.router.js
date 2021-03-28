@@ -22,6 +22,17 @@ router.put('/like/:id', (req, res) => {
     // res.sendStatus(200);
 }); // END PUT Route
 
+//Delete Route
+router.delete('/:id', (req, res)=>{
+    let queryText=`DELETE FROM "gallery" WHERE "id"=$1`
+    pool.query(queryText, [req.params.id]).then((results)=> {
+        res.sendStatus(200);
+    }).catch((err)=>{
+        console.log(err);
+        res.sendStatus(500);
+    })
+})
+
 // GET Route
 router.get('/', (req, res) => {
     let queryText=`SELECT * FROM "gallery" ORDER BY "id"; `;
