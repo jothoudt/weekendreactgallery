@@ -9,7 +9,7 @@ function Form(props){
         const newPhoto={
             path: tempURL,
             description: tempDescription,
-            likes:0
+            likes: 0
         };//end object
         axios.post('/gallery', newPhoto).then(
             props.displayPost

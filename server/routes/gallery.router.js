@@ -37,8 +37,8 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     let newPhoto=req.body;
-    let queryText=`INSERT INTO "gallery" ("path", "description") VALUES ($1, $2);`;
-    pool.query(queryText,[newPhoto.path, newPhoto.description]).then(result => {
+    let queryText=`INSERT INTO "gallery" ("path", "description", "likes") VALUES ($1, $2, $3);`;
+    pool.query(queryText,[newPhoto.path, newPhoto.description, newPhoto.likes]).then(result => {
         res.sendStatus(200);
     }).catch(error =>{
         res.sendStatus(500);
