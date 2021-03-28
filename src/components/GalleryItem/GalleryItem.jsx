@@ -1,4 +1,4 @@
-import Axios from 'axios';
+import axios from 'axios';
 import React, {useState} from 'react'
 import './GalleryItem.css'
 
@@ -24,7 +24,7 @@ function GalleryItem(props){
         let id= props.galleryItem.id;
         let likes= props.galleryItem.likes;
 
-        Axios.put('/gallery/like/' + id, likes).then(
+        axios.put('/gallery/like/' + id, likes).then(
             props.display
         ).catch((err)=>{
             console.log(err)
@@ -34,7 +34,7 @@ function GalleryItem(props){
 
     let deletePhoto=()=>{
         let id= props.galleryItem.id;
-        Axios.delete('/gallery/' + id).then(
+        axios.delete('/gallery/' + id).then(
             props.display
         ).catch((err)=>{
             console.log(err);
