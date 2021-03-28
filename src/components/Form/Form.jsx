@@ -5,6 +5,7 @@ function Form(props){
     const [tempURL, setTempURL]=useState('');
     const [tempDescription, setTempDescription]=useState('');
 
+    //function to add post
     let addPhoto=()=>{
         const newPhoto={
             path: tempURL,
@@ -17,15 +18,17 @@ function Form(props){
             console.log(err);
             alert(err);
         })
-    }
+    };
 
+    //to handle URL Form
     let handleUrl=(event)=>{
         setTempURL(event.target.value);
-    }
+    };//end handleUrl
 
+    //to handle photo description
     let handleDescription=(event)=>{
         setTempDescription(event.target.value);
-    }
+    };//end handleDescription
 
     return(
         <>

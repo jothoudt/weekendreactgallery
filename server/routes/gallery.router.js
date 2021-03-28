@@ -35,6 +35,7 @@ router.get('/', (req, res) => {
     
 }); // END GET Route
 
+//Post Route
 router.post('/', (req, res) => {
     let newPhoto=req.body;
     let queryText=`INSERT INTO "gallery" ("path", "description", "likes") VALUES ($1, $2, $3);`;
@@ -43,6 +44,6 @@ router.post('/', (req, res) => {
     }).catch(error =>{
         res.sendStatus(500);
     })
-})
+})//end POST
 
 module.exports = router;

@@ -1,6 +1,5 @@
 # Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+Gallery of My life
 
 ## Description
 
@@ -16,6 +15,9 @@ Your project description goes here. What problem did you solve? How did you solv
 [x] create an Axios put call to update likes on the click of the like button
 [x] create a database and database.sql
 [x] create a table and add images
+[x] add a form component so user can add photo
+[x] create an Axios Post Call
+
 
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
