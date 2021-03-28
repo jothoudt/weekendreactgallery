@@ -32,9 +32,20 @@ function GalleryItem(props){
         })
     };//end uodateLikes
 
+    let deletePhoto=()=>{
+        let id= props.galleryItem.id;
+        Axios.delete('/gallery/' + id).then(
+            props.display
+        ).catch((err)=>{
+            console.log(err);
+            alert(err)
+        })
+    }
+
     return(
         <>
         <div className="post">
+            <button onClick={deletePhoto}>Delete</button>
             <p onClick={toggleShowDescription}>
                 {displayChange()}
             </p>
